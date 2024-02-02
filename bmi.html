@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude - Articles</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="index.html" id="navbar_logo">APTITUDE</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu active">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links">Homepage</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="http://fitnesschatbot1.pythonanywhere.com/" class="navbar_links">Chatbot</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="articles.html" class="navbar_links">Articles</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="recipe.html" class="navbar_links">Recipes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- BMI Calculator -->
+    <div class="container">
+        <div class="box">
+          <h1>BMI Calculator</h1>
+          <div class="content">
+
+
+            <div class="input">
+                <label for="height">Age</label>
+                <input type="text" class="text-input" id="age" autocomplete="off" required/>
+            </div>
+
+            <div class="gender">
+
+                <label class="container">
+                    <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                    <span class="checkmark"></span>
+                  </label>
+
+
+                <label class="container">
+                    <input type="radio" name="radio" id="f" ><p class="text">Female</p>
+                      <span class="checkmark"></span>
+                    </label>
+
+            </div>
+
+            <div class="containerHW">
+            <div class="inputH">
+              <label for="height">Height(cm)</label>
+              <input type="number" id="height" required>
+            </div>
+
+            <div class="inputW">
+              <label for="weight">Weight(kg)</label>
+              <input type="number" id="weight" required>
+            </div>
+          </div>
+
+            <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+          </div>
+          <div class="result">
+            <p>Your BMI is</p>
+            <div id="result">00.00</div>
+            <p class="comment"></p>
+          </div>
+
+        </div>
+      </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div></div>
+
+
+
+    <!-- Footer Section -->
+    <div class="footer_container">
+        <div class="footer_links">
+            <div class="footer_links-wrapper">
+                <div class="footer_link-items">
+                    <h2>About Us</h2>
+                    <a href="#">How it works</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">References</a>
+                    <a href="#">Terms of Services</a>
+                    <a href="#">About the company</a>
+                </div>
+                <div class="footer_link-items">
+                    <h2>Social Media</h2>
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Reddit</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
